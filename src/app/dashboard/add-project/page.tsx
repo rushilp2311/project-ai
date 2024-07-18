@@ -88,16 +88,16 @@ export default async function AddProject() {
   //               </div>
 
   //               <div className="mt-5 px-6 flex justify-center items-center py-5 border dark:border-neutral-700 rounded border-dashed">
-  //                 {ownerSearchResult ? (
-  //                   ownerSearchResult.map((owner: any) => (
-  //                     <p key={owner.id}>{owner.name}</p>
-  //                   ))
-  //                 ) : (
-  //                   <p className="text-neutral-500 text-balance">
-  //                     No result to display. Start searching or update the search
-  //                     text.
-  //                   </p>
-  //                 )}
+                  // {ownerSearchResult ? (
+                  //   ownerSearchResult.map((owner: any) => (
+                  //     <p key={owner.id}>{owner.name}</p>
+                  //   ))
+                  // ) : (
+                  //   <p className="text-neutral-500 text-balance">
+                  //     No result to display. Start searching or update the search
+                  //     text.
+                  //   </p>
+                  // )}
   //               </div>
   //             </div>
   //           </div>

@@ -20,4 +20,11 @@ const projectSchema = z.object({
   description: z.string().optional(),
 });
 
-export { loginSchema, signUpSchema, projectSchema };
+const taskSchema = z.object({
+  title: z.string(),
+  description: z.string(),
+  assignee: z.string(),
+  status: z.string(),
+});
+
+export { loginSchema, signUpSchema, projectSchema, taskSchema };

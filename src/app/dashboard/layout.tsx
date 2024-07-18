@@ -43,9 +43,9 @@ export default function DashboardLayout({
 }>) {
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
-      <div className="hidden border-r  dark:border-neutral-700  md:block">
+      <div className="hidden border-r md:block">
         <div className="flex h-full max-h-screen flex-col gap-2">
-          <div className="flex h-14 items-center border-b dark:border-neutral-700 px-2  lg:h-[60px] ">
+          <div className="flex h-14 items-center border-b px-2  lg:h-[60px] ">
             <Link href="/" className="flex items-center justify-start h-[60px]">
               <Image
                 src={Logo}
@@ -98,26 +98,10 @@ export default function DashboardLayout({
               </Link>
             </nav>
           </div>
-          <div className="mt-auto p-4">
-            <Card x-chunk="dashboard-02-chunk-0">
-              <CardHeader className="p-2 pt-0 md:p-4">
-                <CardTitle>Upgrade to Pro</CardTitle>
-                <CardDescription>
-                  Unlock all features and get unlimited access to our support
-                  team.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="p-2 pt-0 md:p-4 md:pt-0">
-                <Button size="sm" className="w-full">
-                  Upgrade
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </div>
       <div className="flex flex-col">
-        <header className="flex h-14 items-center gap-4 border-b dark:border-neutral-700  px-4 lg:h-[60px] lg:px-6 ">
+        <header className="flex h-14 items-center gap-4 border-b px-4 lg:h-[60px] lg:px-6 ">
           <Sheet>
             <SheetTrigger asChild>
               <Button
@@ -227,7 +211,6 @@ export default function DashboardLayout({
                     className="w-full"
                     action={async () => {
                       "use server";
-                      console.log("called");
                       await signOut({ redirectTo: "/" });
                     }}
                   >

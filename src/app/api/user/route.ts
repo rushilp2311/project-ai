@@ -3,7 +3,6 @@ import bcrypt from "bcrypt";
 import { sql } from "@vercel/postgres";
 import { NextRequest, NextResponse } from "next/server";
 import { GetUserRequestType } from "@/types/User";
-import { count } from "console";
 
 export async function POST(request: Request) {
   try {
