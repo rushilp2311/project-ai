@@ -24,7 +24,6 @@ export async function POST(request: Request) {
 
 export async function GET(request: NextRequest) {
   try {
-    console.log(request.nextUrl.searchParams);
     const searchType = request.nextUrl.searchParams.get("searchType");
     const searchText = request.nextUrl.searchParams.get("searchText");
     const field = request.nextUrl.searchParams.get("field");

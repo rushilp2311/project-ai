@@ -38,9 +38,6 @@ export default function Login() {
           title: "Uh oh! Error logging in.",
           description: "Check credentials",
         });
-      } else {
-        // redirect
-        console.log("Logged In");
       }
     } catch (err: any) {
       toast({

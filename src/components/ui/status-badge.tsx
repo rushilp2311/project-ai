@@ -10,11 +10,11 @@ export default function StatusBadge({
 }) {
   const getBadgeClasses = useMemo(() => {
     if (type === "todo") {
-      return "bg-gray-600 dark:bg-gray-800 dark:text-white";
+      return "bg-neutral-600 dark:bg-neutral-800 dark:text-neutral-300 text-white hover:bg-neutral-600";
     } else if (type === "done") {
-      return "bg-green-600 dark:bg-green-800 dark:text-green-300";
+      return "bg-green-600 dark:bg-green-800 dark:text-green-300 text-white hover:bg-green-600";
     } else {
-      return "bg-blue-600 dark:bg-blue-800 dark:text-blue-300";
+      return "bg-blue-600 dark:bg-blue-800 dark:text-blue-300 text-white hover:bg-blue-600";
     }
   }, [type]);
 

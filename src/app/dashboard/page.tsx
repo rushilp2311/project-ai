@@ -33,7 +33,7 @@ export default async function Dashboard() {
           <div className="grid mt-2 gap-x-3 gap-y-6 grid-cols-3 grid-rows-2">
             {projects?.data.map((project) => (
               <Link key={project.id} href={`/dashboard/project/${project.id}`}>
-                <div className="row-span-1 border group rounded-md cursor-pointer hover:dark:bg-gray-800 hover:bg-neutral-100">
+                <div className="row-span-1 border group rounded-md cursor-pointer hover:bg-muted">
                   <div className="px-10 py-5">
                     <p className="font-bold text-lg">{project.name}</p>
                     <p className="dark:text-neutral-400">

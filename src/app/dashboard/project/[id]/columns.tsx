@@ -39,5 +39,8 @@ export const columns: ColumnDef<Task>[] = [
   {
     accessorKey: "created_at",
     header: "Created At",
+    cell: ({ row }) => (
+      <p>{new Date(row.getValue("created_at")).toLocaleString()}</p>
+    ),
   },
 ];
