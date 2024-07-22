@@ -7,7 +7,6 @@ import Link from "next/link";
 export default async function Dashboard() {
   const projects = await getAllProjectsForCurrentOwner({
     forDashboard: true,
-    includeAllCount: true,
   });
 
   return (
@@ -23,13 +22,6 @@ export default async function Dashboard() {
       </div>
       {projects ? (
         <div className="mt-10">
-          {projects.allCount && projects?.allCount > 6 && (
-            <div className="flex items-center justify-end">
-              <Button variant="link">
-                View All <ChevronRight className="ml-2 w-4 h-4" />
-              </Button>
-            </div>
-          )}
           <div className="grid mt-2 gap-x-3 gap-y-6 grid-cols-3 grid-rows-2">
             {projects?.data.map((project) => (
               <Link key={project.id} href={`/dashboard/project/${project.id}`}>

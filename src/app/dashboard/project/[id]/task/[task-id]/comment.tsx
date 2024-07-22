@@ -63,7 +63,7 @@ export default function CommentSection({ comments, setComments }: any) {
       return <>No comments yet</>;
 
     return comments.map((comment: any) => (
-      <div key={comment.id} className="text-sm rounded bg-muted p-3">
+      <div key={comment.id} className="text-sm rounded bg-muted p-3 my-2">
         <p className="dark:text-neutral-300 text-neutral-600 font-semibold">
           {comment.commenter}
         </p>
